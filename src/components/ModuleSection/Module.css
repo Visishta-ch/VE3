@@ -1,0 +1,124 @@
+/* This is the style sheet applied for Tab.js and searchSlide.js(initial div ) */
+
+.container1 {
+  width: 960px;
+  height: 540px;
+  border: 2px solid #e0e0e0;
+  margin: 0px auto;
+  padding: 0;
+  left: 0%;
+  right: 0%;
+  margin-top: 5%;
+  vertical-align: middle;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.rightt {
+  position: relative;
+  right: -150%;
+}
+
+.inline {
+  display: inline-flex;
+}
+body {
+  background: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 500px;
+  height: 300px;
+  background: #f1f1f1;
+  margin: 100px auto 0;
+  word-break: break-all;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+.bloc-tabs {
+  display: flex;
+  background-color: #0066b2;
+}
+.tabs {
+  padding: 15px;
+  text-align: center;
+  width: 50%;
+  background: rgba(128, 128, 128, 0.075);
+  cursor: pointer;
+  color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  border: 2px solid white;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+}
+
+.active-tabs {
+  background: white;
+  color: #0066b2;
+  border-bottom: 1px solid transparent;
+}
+
+.active-tabs::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 2px);
+  height: 5px;
+}
+
+button {
+  border: none;
+}
+.content-tabs {
+  flex-grow: 1;
+}
+.content {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.content h2 {
+  /* right: -50%; */
+  color: #0066b2;
+  padding: 15px;
+  font-family: 'Roboto', sans-serif;
+  /* padding: 0px 0 5px 0px; */
+}
+.content hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+.content p {
+  width: 100%;
+  height: 100%;
+  /* float : right; */
+}
+
+.content-tabs img {
+  float: left;
+  height: 200px;
+  width: 300px;
+  margin: 40px;
+}
+
+.active-content {
+  display: block;
+}

@@ -1,0 +1,12 @@
+.header{
+    padding:20px;
+    margin:10px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.header a{
+    padding:50px;
+    color:gray;
+    font-size: 25px;
+}
